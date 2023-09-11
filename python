@@ -1,0 +1,22 @@
+name = input("Введите своё имя: ")
+user = input("Введите Вашу фамилию: ")
+pas = input("Придумайте пароль: ")
+
+print(f"\nПривет, {name} {user}!")
+print(f"Запишите Ваш пароль: {pas}\n")
+
+user_name = input("Имя: ")
+user_user = input("Фамилия: ")
+user_pass = input("Пароль: ")
+
+enter = user_name, user_user, user_pass
+
+while enter:
+    if input("Имя: ") == name:
+        if input("Фамилия: ") == user:
+            if input("Пароль: ") == pas:
+                if pas:
+                    print("Вы успешно вошли в систему!")
+                else:
+                    print("Неправильно введены данные пользователя: ")
+                enter = False
